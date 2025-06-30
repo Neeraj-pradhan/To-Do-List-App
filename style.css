@@ -1,0 +1,112 @@
+*{margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+
+}
+body{
+    background-color: #e9f4f8;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-app{
+    width: 35%;
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+h1{
+    color: #1a71db;
+    text-align: center;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    /* background-color: #edeef0; */
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 12px;
+    font-weight: 16px;
+    border: 3px solid #1a71db;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 14px 30px;
+    background-color: #1a71db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+ul{
+    margin-top: 20px;
+}
+ul li{
+    list-style: none;
+    font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 0px 12px 0px;
+    text-align: center;
+    border-bottom: dotted rgb(209, 204, 204) 2px;
+    height: 40px;
+
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url(check.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    border: #1a71db solid 2px;
+    border-radius: 10px;
+}
+ul li button{
+    position: absolute;
+    top: 9px;
+    background-color: orangered;
+    color: white;
+    font-size: 14px;
+    border-radius: 12px;
+    padding: 10px 28px;
+    /* text-decoration: none; */
+    right: 0;
+}
+
+
+@media (min-width:320px) and (max-width:767px){
+   .list-app {
+    width: 100%;
+}
+ul li button {
+    font-size: 14px;
+    padding: 10px 14px;
+}
+button {
+    padding: 5px 20px; 
+    font-size: 16px;
+}
+}

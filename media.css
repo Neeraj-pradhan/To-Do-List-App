@@ -1,0 +1,13 @@
+
+@media (min-width:320px)and(max-width:767px) {
+    .list-app{
+        width: 100%;
+         height: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    }
+    button{
+        font-size: 12px;
+    }
+}
